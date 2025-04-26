@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthWise | Personal Finance Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Wealth<span>Wise</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Budgeting</a></li>
+                    <li><a href="#">Investing</a></li>
+                    <li><a href="#">Saving</a></li>
+                    <li><a href="#">Debt</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="auth-buttons">
+                        <a href="#" class="btn-auth btn-login" id="loginBtn">Log In</a>
+                        <a href="#" class="btn-auth btn-signup" id="signupBtn">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Log In</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="form-submit">Log In</button>
+                <div class="form-footer">
+                    Don't have an account? <a href="#" id="switchToSignup">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" required>
+                </div>
+                <button type="submit" class="form-submit">Sign Up</button>
+                <div class="form-footer">
+                    Already have an account? <a href="#" id="switchToLogin">Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Master Your Personal Finances</h1>
+            <p>Practical advice to help you budget better, save more, and achieve financial freedom. Join thousands of readers who are taking control of their money.</p>
+            <a href="#" class="btn">Start Reading</a>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Articles</h2>
+            </div>
+            <div class="posts-grid">
+                <!-- Post 1 -->
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/budgeting.jpg" alt="Budgeting">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Budgeting</span>
+                        <h3 class="post-title">The 50/30/20 Budget Rule: A Simple Way to Manage Your Money</h3>
+                        <p class="post-excerpt">Learn how to allocate your income to needs, wants, and savings with this proven budgeting method that works for any income level.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Post 2 -->
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/investing.jpg" alt="Investing">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Investing</span>
+                        <h3 class="post-title">How to Start Investing With Just $100: A Beginner's Guide</h3>
+                        <p class="post-excerpt">You don't need thousands of dollars to begin building wealth. Discover the best ways to start investing with a small amount of money.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> June 8, 2023</span>
+                            <span><i class="far fa-clock"></i> 12 min read</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Post 3 -->
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/debt.jpg" alt="Debt">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Debt</span>
+                        <h3 class="post-title">The Snowball vs. Avalanche Method: Which Debt Strategy is Right For You?</h3>
+                        <p class="post-excerpt">Compare two popular debt payoff strategies to determine which approach will help you become debt-free faster and save more money.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> June 1, 2023</span>
+                            <span><i class="far fa-clock"></i> 10 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get Financial Tips Delivered to Your Inbox</h2>
+            <p>Subscribe to our weekly newsletter and receive expert advice on managing your money, building wealth, and achieving financial independence.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Explore Topics</h2>
+            </div>
+            <div class="categories-grid">
+                <!-- Category 1 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3 class="category-title">Budgeting</h3>
+                    <p class="category-count">24 Articles</p>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="category-title">Investing</h3>
+                    <p class="category-count">18 Articles</p>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3 class="category-title">Saving Money</h3>
+                    <p class="category-count">15 Articles</p>
+                </div>
+                
+                <!-- Category 4 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="category-title">Debt Management</h3>
+                    <p class="category-count">12 Articles</p>
+                </div>
+                
+                <!-- Category 5 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="category-title">Real Estate</h3>
+                    <p class="category-count">9 Articles</p>
+                </div>
+                
+                <!-- Category 6 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-umbrella"></i>
+                    </div>
+                    <h3 class="category-title">Insurance</h3>
+                    <p class="category-count">7 Articles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <!-- About Column -->
+                <div class="footer-column">
+                    <h3>About WealthWise</h3>
+                    <p>WealthWise is dedicated to helping individuals take control of their finances through practical advice, actionable strategies, and financial education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links Column -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Popular Categories Column -->
+                <div class="footer-column">
+                    <h3>Popular Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Budgeting</a></li>
+                        <li><a href="#">Investing</a></li>
+                        <li><a href="#">Saving Money</a></li>
+                        <li><a href="#">Debt Management</a></li>
+                        <li><a href="#">Retirement</a></li>
+                        <li><a href="#">Taxes</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Column -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Financial Street, Moneyville</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@wealthwise.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 WealthWise. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
